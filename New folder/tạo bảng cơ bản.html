@@ -3,8 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        table, th, td {
+            border: 1px solid black
+        }
+
+        table {
+            border-collapse: collapse
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #eee
+        }
+
+        td {
+            text-align: center
+        }
+
+        select {
+            width: 40%;
+        }
+    </style>
 </head>
 <body>
-
+<form>
+    <h2>Market Reseach Survey</h2>
+    <p> Please take a few moments to complete this satisfaction survey</p>
+    <p>What is your age range?</p>
+    <label>
+        <select>
+            <option>18-24</option>
+            <option>25-34</option>
+            <option>35-50</option>
+            <option>50+</option>
+        </select>
+    </label>
+    <p>What is your yearly income range?</p>
+    <label>
+        <select>
+            <option>0$-25000%</option>
+            <option>25001$-50000$</option>
+            <option>50001$-100000$</option>
+            <option>100000$+</option>
+        </select>
+    </label>
+    <p>Gender
+        <br><label for="male"><input id="male" type="radio" name="gender"> Nam</label>
+        <br><label for="female"><input id="female" type="radio" name="gender"> Female</label>
+        <br><label for="non"><input id="non" type="radio" name="gender"> Nonbinary </label>
+        <br><label for="other"><input id="other" type="radio" name="gender"> Orther</label>
+        <br>&emsp;<label for="not"><input type="text" name="gender" size="20" id="not"></label>
+    </p>
+    <p>Which of the following products have your purchased in the last 2 months. Please check all that apply
+        <br><label for="p1"><input id="p1" type="radio" name="b"> Product 1</label>
+        <br><label for="p2"><input id="p2" type="radio" name="b"> Product 2</label>
+        <br><label for="p3"><input id="p3" type="radio" name="b"> Product 3</label>
+    </p>
+    <p>How often would you use our new product?
+        <br><label for="daily"><input id="daily" type="radio" name="c"> Daily</label>
+        <br><label for="weekly"><input id="weekly" type="radio" name="c"> Weekly</label>
+        <br><label for="monthly"><input id="monthly" type="radio" name="c"> Monthly</label>
+    </p>
+    <p>What would you pay for the new product?
+        <br>$ <label><input type="text" name="text" size="15"> . <input type="text" name="text" size="3"></label>
+        <br>&nbsp;&nbsp;&nbsp;Dollars&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Cents</p>
+    <p>What features would like to see it the new product.</p>
+    <label><input type="text" name="text" style="width: 800px;height: 150px"></label>
+    <p>Please rate your level of agreement with the following statements</p>
+    <table style="width: 800px; height: 150px">
+        <tr>
+            <th style="width: 52%"></th>
+            <th style="width: 12%">Strongly Disagree</th>
+            <th style="width: 12%">Disagree</th>
+            <th style="width: 12%">Agree</th>
+            <th style="width: 12%">Strongly Agree</th>
+        </tr>
+        <tr>
+            <td style="text-align: left"><strong>Our products are priced fairly</strong></td>
+            <td><input type="radio" name="f"><br>1</td>
+            <td><input type="radio" name="f"><br>2</td>
+            <td><input type="radio" name="f"><br>3</td>
+            <td><input type="radio" name="f"><br>4</td>
+        </tr>
+        <tr>
+            <td style="text-align: left"><strong>Our products are high quality</strong></td>
+            <td><input type="radio" name="g"><br>1</td>
+            <td><input type="radio" name="g"><br>2</td>
+            <td><input type="radio" name="g"><br>3</td>
+            <td><input type="radio" name="g"><br>4</td>
+        </tr>
+        <tr>
+            <td style="text-align: left"><strong>You would recomment our product to a friend or coworker</strong></td>
+            <td><input type="radio" name="h"><br>1</td>
+            <td><input type="radio" name="h"><br>2</td>
+            <td><input type="radio" name="h"><br>3</td>
+            <td><input type="radio" name="h"><br>4</td>
+        </tr>
+    </table>
+    <br>
+    <button><strong>Submit</strong></button>
+    <input type="reset" value="Reset">
+</form>
 </body>
 </html>
