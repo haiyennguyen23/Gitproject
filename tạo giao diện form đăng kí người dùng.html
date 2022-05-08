@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng kí </title>
+    <style>
+        p {
+            margin: 0;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<form action="bt-formdangkynguoidung.html" method="post">
+    <label for="name"><p>Họ và tên</p>
+        <input id="name" type="text" name="name" size="20"></label>
+    <label for="email"><p>Email</p></label>
+    <input id="email" type="text" name="email" size="20">
+    <label for="phone"><p>Số điện thoại</p></label>
+    <input id="phone" type="text" name="phone" size="20">
+    <p>Giới tính:</p>
+    <label for="male"><input id="male" type="radio" name="gender">Nam</label>
+    <label for="female"><input id="female" type="radio" name="gender">Nữ</label>
+    <br>
+    <button>Đăng ký</button>
+</form>
+</body>
+</html>
