@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Tính chỉ số cân nặng cơ thể </title>
-    <h2>Tính chỉ số cân nặng</h2>
 </head>
 <body>
-     <script>
-         inputWidth = prompt("Nhập vào chiều cao ");
-         inputHeight = prompt("Nhập vào cân nặng");
-         let width = parseInt(inputWidth);
-         let height = parseInt(inputHeight);
-         let BMI = weight/(height^2);
-         document.write("The area is: " + BMI)
+<h1>Tính chỉ số cân nặng</h1>
+<label for="can_nang"> Nhập cân nặng:  (kg)</label>
+<input type="text" name="" id="can_nang">
+<br>
+<br>
+<label for="chieu_cao"> Nhập chiều cao:  (m)</label>
+<input type="text" name="" id="chieu_cao">
+<br>
+<br>
 
-
-     </script>
+<button onclick="kiem_tra()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function kiem_tra(){
+        let can_nang=document.getElementById("can_nang").value
+        let chieu_cao=document.getElementById("chieu_cao").value
+        let bmi= can nang
+    }
+</script>
 </body>
+
 </html>
