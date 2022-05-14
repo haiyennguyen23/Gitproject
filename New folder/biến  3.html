@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="radius"></label>
+<p id="result"></p>
+<button onclick="bai3()">Tính</button>
+</body>
+<script>
+    function bai3() {
+        let radius = document.getElementById("radius").value
+        let perimeter = (radius * 2) * Math.PI
+        let area = Math.pow(radius, 2) * Math.PI
+        document.getElementById("result").innerHTML = "Chu vi hình tròn là: " + perimeter.toFixed(2) +
+            "m<br>Diện tích hình tròn là: " + area.toFixed(2) + "m<sup>2</sup>"
+    }
+</script>
+</html>
