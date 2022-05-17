@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let array = [1,4,3,4,5,4];
+         let a = Number(prompt('Nhap a: '));
+         let count = 0;
+         function bai2(){
+             for (let i = 0;i < array.length; i++){
+                 if(array[i] == a){
+                     count += 1;
+                 }
+             }
+             document.write("so luong phan tu a co trong mang la " + count);
+         }
+         bai2();
+     </script>
+</body>
+</html>
