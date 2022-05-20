@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <script>
+
+          Console.Write("\n");
+          Console.Write("Nhập tháng và hiển thị số ngày tương ứng:\n");
+          Console.Write("--------------------------------------------------------------");
+          Console.Write("\n\n");
+
+          Console.Write("Nhập tháng trong năm: ");
+          monno = Convert.ToInt32(Console.ReadLine());
+          switch (monno)
+          {
+              case 1:
+              case 3:
+              case 5:
+              case 7:
+              case 8:
+              case 10:
+              case 12:
+                  Console.Write("Tháng có 31 ngày . \n");
+                  break;
+              case 2:
+                  Console.Write("Tháng hai có 28 ngày . \n");
+                  Console.Write("Trong năm nhuận tháng hai có 29 ngày .\n");
+                  break;
+              case 4:
+              case 6:
+              case 9:
+              case 11:
+                  Console.Write("Tháng có 30 ngày . \n");
+                  break;
+              default:
+                  Console.Write("Dữ liệu ko hợp lệ. Xin bạn thử lại !!!\n");
+                  break;
+          }
+
+      </script>
+</body>
+</html>

@@ -16,13 +16,13 @@ var cal = document.getElementById('cal');
       var weight = weight1.value;
       var BMI = caculate(height, weight);
       if (BMI < 18) {
-          document.write("Underweight");
+          alert("Underweight");
       } else if (bmi < 25.0) {
-          document.write("Normal");
+          alert("Normal");
       } else if (bmi < 30.0) {
-          document.write("Overweight");
+          alert("Overweight");
       } else {
-          document.write("Obese");
+          alert("Obese");
       }
   }
 
