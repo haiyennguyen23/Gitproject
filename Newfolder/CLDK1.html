@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<h1>Nhập tuổi</h1>
+Học sinh: <input type="text" id="Nhập tuổi của học sinh"><br>
+<h2 id="Kiểm tra "></h2>
+<button onclick="student()">Kiểm tra</button>
+<script>
+    function Tuoi_cua_hoc_sinh() {
+        let student = document.getElementById("Nhập tuổi của học sinh").value
+       if(student < 2004){
+           document.getElementById("Kiểm tra").innerHTML = "Học sinh đã tốt nghiệp lớp 10 "
+       }else if(student > 2007){
+           document.getElementById("Kiểm tra").innerHTML ="Học sinh chưa tốt nghiệp lớp 10"
+       }else if(student==2007 ){
+           document.getElementById("Kiểm tra").innerHTML ="Học sinh chuẩn bị tốt nghiệp lớp 10"
+       }
+    }
+
+</script>
+</html>
