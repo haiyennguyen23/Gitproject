@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Game Funnyquesstion</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="casestudy.css">
 
 
 </head>
-<div>
+
+<body>
+<a>score</a>
+<div id="game">
+<div style="text-align: center">
     <h1>Game funnyquestion</h1>
 </div>
-<div id='point'>
+<div id='point' style="text-align: center">
     <h2 id="result"></h2>
 </div>
-<body>
-<div id="wrapper">
+<div id="wrapper" style="text-align: center">
     <div id="questionScreen" class="hide">
         <div id="question"></div>
-        <div id="answer">
+        <div id="answer" style="align-items: center ;padding-left:30% ">
             <table>
                 <tr>
                     <td><button id="answer_1" class="an_" onclick="checkAnswer(this.id, this)">Answer question 1</button></td>
@@ -31,6 +34,8 @@
         </div>
     </div>
 </div>
-<script src="js/Funnyquestion.js"></script>
+</div>
+
+<script src="Funnyquestion.js"></script>
 </body>
 </html>

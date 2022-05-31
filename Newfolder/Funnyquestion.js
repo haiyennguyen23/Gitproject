@@ -5,11 +5,15 @@ class Question {
         this.correctAnswer = correctAnswer;
     }
 
+
     checkAnswer(answer) {
         return answer === this.correctAnswer;
     }
 
+
 }
+
+
 
 
 let question1 = new Question("Câu 1:Cái gì nặng bằng con voi nhưng chẳng nặng gam nào? ", ["A.Cái cân", "B.Cái bóng của con voi", "C.Cái cân ", "D.Cái bút"], "B.Cái bóng của con voi");
@@ -31,10 +35,12 @@ let funnyquestion = [question1, question2, question3, question4, question5, ques
 let getQuestion = document.getElementById('question');
 showQuestion(question1);
 
+
 function next(index) {
     index++;
     showQuestion(funnyquestion[index]);
 }
+
 
 function showQuestion(question_1) {
     getQuestion.innerHTML = question_1.content;
@@ -43,12 +49,16 @@ function showQuestion(question_1) {
         let getaswId = document.getElementById('answer_' + (i + 1));
         getaswId.innerHTML = question_1.answer[i];
 
+
     }
 }
 
 
+
+
 showQuestion(question1);
 let index = 0;
+
 
 function checkAnswer(id) {
     let answer = document.getElementById(id).innerHTML;
@@ -60,8 +70,7 @@ function checkAnswer(id) {
         alert('câu trả lời đúng ');
         if (index === 14) {
             alert("Chúc mừng bạn đã thắng !");
-            // timeCount = 1;
-            // reload();
+
         }
         next(index);
         index++;
@@ -72,7 +81,11 @@ function checkAnswer(id) {
     }
 }
 
+
 function reload() {
     location.replace("Dovui.html");
 }
+
+
+
 
