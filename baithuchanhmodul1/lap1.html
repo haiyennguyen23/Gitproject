@@ -5,32 +5,46 @@
     <title>Title</title>
 </head>
 <body>
-<!--Bài 1-->
-<!--<p id="demo"></p>-->
-<!--<script>-->
-<!--    let text = "";-->
-<!--    let i;-->
-<!--    for (i = 0; i < 100 ; i++) {-->
-<!--        text +=  i + "<br>";-->
-<!--    }-->
-<!--    document.getElementById("demo").innerHTML = text;-->
-<!--    alert( " Bạn đã hoàn thành")-->
-<!--</script>-->
-<!--// bài 2-->
-<!--<script>-->
+//Bài 1
+<p id="demo"></p>
+<script>
+    let text = "";
+    let i;
+    for (i = 0; i < 100 ; i++) {
+        text +=  i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+    alert( " Bạn đã hoàn thành")
+</script>
+// bài 2
+<script>
 
-<!--       for( let i=0; i<100;i++){-->
-<!--           let a = prompt(" Nhập vào nhiệt độ: ");-->
-<!--           if(a > 100){-->
-<!--               alert('yêu cầu người dùng giảm nhiệt độ ')-->
-<!--           }else{-->
-<!--               alert("Yêu cầu người dùng tăng nhiệt độ")-->
-<!--           }-->
-<!--       }-->
-<!--</script>-->
+       for( let i=0; i<10000;i++){
+           let a = prompt(" Nhập vào nhiệt độ: ");
+           if(a > 100){
+               alert("yêu cầu người dùng giảm nhiệt độ ")
+           }else if (a<20){
+               alert(" Nhiệt độ tăng nhiệt độ")
+           }else{
+               alert("Nhiệt độ OK ")
+           }
+       }
+</script>
 //bài 3
 <script>
-    
+      let a=0;
+      let b=1;
+      let c=0;
+      let tong=0;
+      for(let  i=0;i<20;i++){
+          document.write(a+ "<br>")
+          c= a+b;
+          tong=tong+a;
+          a=b;
+          b=c;
+          document.write("tổng = " +tong)
+      }
 </script>
+
 </body>
 </html>
