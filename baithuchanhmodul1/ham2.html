@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài 1:
+    function binhPhuong(){
+        let a = parseInt(prompt("Nhập số a"));
+        let b2= a*a;
+        alert("Bình phương là: " + b2);
+    }
+    binhPhuong()
+    // bài 2:
+    function tinhToan(){
+        let R = parseInt(prompt("Nhập vào bán kính : "));
+        let S= R*R*3.14;
+        alert("Diện tích hình tròn là: " + S);
+    }
+       tinhToan()
+    function tinhC(){
+        let R = parseInt(prompt("Nhập vào bán kính : "));
+        let C= 2*R*3.14;
+        alert("Chu vi hình tròn là: " + C);
+    }
+    tinhC()
+
+    // bài 4:
+     function kiemTra(){
+         let k = parseInt(prompt("Nhập số: "));
+         if(isNaN(k) === false){
+             alert("True")
+         }else{
+             alert("False")
+         }
+     }
+     kiemTra();
+    // bài 5:
+    function Min(){
+        let a = parseInt(prompt("Nhập số a: "));
+        let b = parseInt(prompt("Nhập số b: "));
+        let c = parseInt(prompt("Nhập số c: "));
+        if(a<b&&a<c){
+            alert("Số nhỏ nhất là: " +a)
+        }else if(b<a&&b<c){
+            alert("Số nhỏ nhất là: " +b)
+        }else{
+            alert("Số nhỏ nhất là: "+c)
+        }
+    }
+        Min()
+    // bài 6:
+     function nhapS(){
+         let a = parseInt(prompt("Nhập số: "));
+         if (a>0){
+             alert("True")
+         }else{
+             alert("False")
+         }
+     }
+     nhapS()
+    // bài :7
+    function doiSo(){
+        let a = parseInt(prompt("Nhập số a: "));
+        let b = parseInt(prompt("Nhập số b: "));
+    }
+
+</script>
+</body>
+</html>
