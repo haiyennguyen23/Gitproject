@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bài 1
+    let arr=[1,2,3,4,5,6,7,8,9,10];
+   let count = 0;
+   for(let i=0;i< arr.length; i++){
+       if(arr[i]%2==0){
+           count++
+       }
+   }
+   document.write("Số lượng các số chẵn là: " + count)
+  // bài 2:
+   let count = 0
+   let i=0
+   let j=0
+   let arr =[]
+   function soDem(n){
+       for (;i<n;i++){
+           arr[i] = prompt("Nhập vào phần tử "+i+" của mảng")
+       }
+   }
+
+   function soDem1(){
+       let a = prompt("Nhập phần tử cần đếm trong mảng")
+       for(; j<arr.length;j++){
+           if (arr[j]==a){
+               count ++
+           }
+       }
+       return count
+   }
+   soDem(3)
+   soDem1()
+    document.write(count);
+   //bài 3:
+   let S=0
+   let arr =[]
+   n = prompt("Mảng có ... phần tử")
+   for (let i=0;i<n;i++){
+       arr[i] = +prompt("Nhập vào phần tử "+i+" của mảng")
+   }
+
+   function kiemTra(a){
+       if (a<2) return false;
+       else {
+           for (let i=2; i<Math.sqrt(a);i++){
+               if (a%2==0) return false
+           }
+           return true
+       }
+   }
+
+   function kiemTra1(){
+       for (let i=0;i<arr.length;i++){
+           if (kiemTra(arr[i])){
+               S+=arr[i]
+           }
+       }
+       return S
+   }
+   kiemTra1()
+    document.write(S)
+    //bài 4
+   let S=0
+   function tinhTong(n){
+       let j = 2
+       for (i=1;i<n;i++){
+           for (let j=2;j<i;j++){
+               if (i%j==0){
+                   break
+               }
+               if (j==i-1){
+                   S+=i
+               }
+           }
+       }
+       return S
+   }
+   tinhTong(500)
+    document.write(S)
+</script>
+</body>
+</html>
