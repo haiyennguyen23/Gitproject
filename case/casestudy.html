@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage the quantity of cosmetics</title>
+
+</head>
+
+<body>
+<img  src="https://png.pngtree.com/background/20210709/original/pngtree-cosmetic-pink-background-simple-literary-picture-image_914316.jpg">
+<h1>MANAGE THE QUANTITY OF COSMETIC</h1>
+<table style=" border: 1px solid black; width: 700px; float: right" id = "listofgoods">
+
+<!--  <table id="listofproducts">-->
+<!--  </table>-->
+</table>
+
+<table border="1" style="width: 500px; height: 300px" ;>
+  <tr id="id1">
+    <th colspan="2"> Thông tin sản phầm</th>
+  </tr>
+
+  <tr>
+    <th>Mã sản phẩm</th>
+    <td><input type="number" id="number"></td>
+
+  </tr>
+  <tr>
+    <th>Tên sản phẩm</th>
+    <td><input type="text" id="productname"></td>
+  </tr>
+  <tr>
+    <th>Hạn sử dụng</th>
+    <td><input type="text" id="date"></td>
+  </tr>
+  <tr>
+    <th>Giá thành</th>
+    <td><input type="text" id="price"></td>
+  </tr>
+  <tr>
+    <th>Số lượng tồn kho</th>
+    <td><input type="text" id="warehouse"></td>
+  </tr>
+  <tr>
+    <th>Ảnh</th>
+    <td><input type="text" id="img"></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td>
+      <button style="background-color: limegreen" id="add" onclick="addCosmetic()">Add</button>
+      <button style="background-color: gold" id="edit" onclick="updateCosmetic()">Save</button>
+    </td>
+  </tr>
+</table>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
