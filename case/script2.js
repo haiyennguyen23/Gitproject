@@ -65,7 +65,7 @@ class CosmeticManagement {
     }
 
     edit(i, id, productname, date, price, warehouse, img){
-        this.Cosmetic[i].edit(id, productname, date, price, warehouse, img);
+        this.Cosmetic[i].edit(number, productname, date, price, warehouse, img);
     }
 
 }
