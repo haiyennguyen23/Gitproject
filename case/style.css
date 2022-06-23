@@ -1,6 +1,6 @@
 body {
     width:auto;
-    background-color: lightpink;
+    background-color: whitesmoke;
 }
 
 h1 {
@@ -13,6 +13,5 @@ p {
     font-size: 20px;
 }
 img{
-    height:auto;
     width: 100%;
  }
