@@ -1,18 +1,72 @@
+/*//màu nền*/
+/*:root{*/
+/*    --bg1:#9b59b6;*/
+/*    --bg2:#3498db;*/
+/*    --text:#26ade4;*/
+/*}*/
+/*{*/
+/*margin:0;*/
+/*padding:0;*/
+/*outline: none;*/
+/*}*/
+/*a {*/
+/*    text-decoration: none;*/
+/*}*/
+/*.container{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+    /*background: linear-gradient(to bottom right, var(--bg1),var(--bg2));*/
+/*}*/
+/*// màu form dky*/
+/*.form-login{*/
+/*    width: 300px;*/
+/*    height: 500px;*/
+/*    background: aqua;*/
+/*    border-radius: 10px;*/
+/*    padding: 40px 30px;*/
+/*}*/
+/*.form-login h1{*/
+/*    margin-bottom: 40px;*/
+/*}*/
+/*.form-text{*/
+/*    margin-bottom: 40px;*/
+/*    position: relative;*/
+/*}*/
+/*.form-text input{*/
+/*    width: 100%;*/
+/*    height: 35px;*/
+/*    border: none;*/
+/*    border-bottom: 2px solid #dddddd;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.form-text label{*/
+/*    position: absolute;*/
+/*    left: 12px;*/
+/*    bottom: 12px;*/
+/*}*/
+/*.form-text label.focus{*/
+/*    transform: translateY(-45px);*/
+/*}*/
 
-body {
-    width:auto;
-    background-color: whitesmoke;
-}
+/*// nền của casestudy.html*/
+/*body {*/
+/*    width:auto;*/
+/*    background-color: whitesmoke;*/
+/*}*/
 
-h1 {
-    color: black;
-    text-align: center;
-}
+/*h1 {*/
+/*    color: black;*/
+/*    text-align: center;*/
+/*}*/
 
-p {
-    font-family: verdana;
-    font-size: 20px;
-}
-img{
-    width: 100%;
- }
+/*p {*/
+/*    font-family: verdana;*/
+/*    font-size: 20px;*/
+/*}*/
+/*img{*/
+/*    width: 100%;*/
+/* }*/
