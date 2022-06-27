@@ -44,7 +44,6 @@ class Cosmetic {
     setImg(img){
         this.img=img;
     }
-
     edit(number, productname, date, price, warehouse, img){
         this.id= number;
         this.productname= productname;
