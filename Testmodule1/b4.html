@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Bán kính</th>
+    <th>Tọa độ x</th>
+    <th>Tọa độ y</th>
+    <th>Màu</th>
+  </tr>
+  <tr>
+    <td><input type="number" id="radius"></td>
+    <td><input type="number" id="xPosition"></td>
+    <td><input type="number" id="yPosition"></td>
+    <td><select id="color">
+      <option value="#D92121">Red</option>
+      <option value="#00932C">Blue</option>
+      <option value="#fafa37">Yellow</option>
+      <option value="#000000">Black</option>
+    </select></td>
+    <td>
+      <button onclick="renderHTML()">Create</button>
+    </td>
+
+  </tr>
+</table>
+
+<canvas id="myCanvas" width="1368px" height="768px" style="border: 1px solid black"></canvas>
+
+</body>
+<script src="circle.js"></script>
+<script src="exam.js"></script>
+</body>
+</html>

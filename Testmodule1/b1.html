@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let score = [1,2,3,4,5,6,7,8,9,10];
+    let avg = 0;
+    function findavg(arr) {
+        let sum = 0;
+        for (let i = 0;i<score.length;i++) {
+            sum += score[i];
+        } avg = sum/score.length;
+        return avg;
+    } document.write(findavg());
+</script>
+</body>
+</html>
